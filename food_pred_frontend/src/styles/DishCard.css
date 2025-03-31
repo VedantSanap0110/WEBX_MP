@@ -1,0 +1,113 @@
+.dish-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dish-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .dish-name {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .dish-count {
+    background-color: #f0f4ff;
+    color: #3b82f6;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+  }
+  
+  .dish-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+  
+  .detail-label {
+    color: #6b7280;
+    width: 80px;
+    flex-shrink: 0;
+  }
+  
+  .detail-value {
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  .popularity-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: #e5e7eb;
+    border-radius: 3px;
+    margin: 0 0.75rem;
+    overflow: hidden;
+  }
+  
+  .popularity-fill {
+    height: 100%;
+    background-color: #3b82f6;
+    border-radius: 3px;
+  }
+  
+  .popularity-value {
+    color: #1f2937;
+    font-weight: 500;
+    width: 40px;
+    text-align: right;
+  }
+  
+  .day-breakdown {
+    margin-top: 0.5rem;
+  }
+  
+  .day-breakdown h4 {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin: 0 0 0.5rem;
+  }
+  
+  .day-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .day-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    font-size: 0.75rem;
+  }
+  
+  .day-name {
+    color: #6b7280;
+  }
+  
+  .day-count {
+    color: #1f2937;
+    font-weight: 500;
+  }
+  

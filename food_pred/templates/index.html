@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Preference Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>Welcome, Admin!</h2>
+  <label for="dishCount">Select number of top dishes per day:</label>
+  <select id="dishCount">
+      <option value="5">Top 5</option>
+      <option value="10">Top 10</option>
+      <option value="15">Top 15</option>
+      <option value="20">Top 20</option>
+      <option value="25">Top 25</option>
+      <option value="all">All</option>
+  </select>
+  <button onclick="loadDashboard()">Show Dashboard</button>
+  <script>
+    function loadDashboard() {
+      var dishCount = document.getElementById("dishCount").value;
+      window.location.href = "/dashboard?top_n=" + dishCount;
+    }
+  </script>
+</body>
+</html>

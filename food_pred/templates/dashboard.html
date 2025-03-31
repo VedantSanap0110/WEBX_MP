@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Dishes Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="container">
+      <div class="header-card">
+        <div class="header-content">
+          <div class="header-icon" id="foodTypeIcon"></div>
+          <div class="header-text">
+            <h1>Top Dishes Dashboard</h1>
+            <p class="subtitle">Analyze your most popular dishes</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <label for="foodType">Food Type</label>
+            <div class="select-container">
+              <select id="foodType" class="custom-select">
+                <option value="Snacks">Snacks</option>
+                <option value="Lunch" selected>Lunch</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="daySelect">Day</label>
+            <div class="select-container">
+              <select id="daySelect" class="custom-select">
+                <option value="All" selected>All Days</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="topN">Display Count</label>
+            <div class="select-container">
+              <select id="topN" class="custom-select">
+                <option value="5" selected>Top 5</option>
+                <option value="10">Top 10</option>
+                <option value="15">Top 15</option>
+                <option value="20">Top 20</option>
+                <option value="25">Top 25</option>
+                <option value="all">All Dishes</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="submitBtn" class="primary-button">
+            <span class="button-content">Update Results</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="result" class="results-container">
+        <!-- Results will be populated here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
